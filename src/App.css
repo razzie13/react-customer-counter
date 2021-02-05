@@ -1,38 +1,89 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.customer-counter {
+  width: 100%;
+  max-width: 500px;
+  background-color: yellowgreen;
+}
+
+.customer-counter h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.customer-counter p {
+  margin-left: 14%;
+  font-weight: bold;
+}
+
+.customer-counter .customer-counter-count {
+  font-size: 140px;
+  margin: auto;
+}
+
+.customer-counter .customer-counter-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.customer-counter button {
+  border-style: none;
+  border-radius: 50%;
+  width: 14vw;
+  height: 14vw;
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  background-color: yellow;
+}
+
+.customer-counter button a:active {
+  background-color: white;
+}
+
+.call-inside {
+  background-color: yellowgreen;
+  color: black;
+  padding: 40px 0;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.call-inside button {
+  background-color: yellow;
+  color: black;
+  font-size: 18px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.call-inside input {
+  margin: 24px 0;
+  width: 70%;
+  height: 30px;
+  border-style: none;
+  border-radius: 20px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.call-inside label {
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

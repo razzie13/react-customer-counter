@@ -1,0 +1,87 @@
+$background-color: yellowgreen;
+$secondary-color: yellow;
+
+$primary-text-color: black;
+$secondary-text-color: white;
+
+body  {
+    margin: 0;
+    padding: 0;    
+    height: 100vh;
+    width: 100%;
+}
+
+.customer-counter  {
+    width: 100%;
+    max-width: 500px;
+    background-color: $background-color;
+
+    h2  {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    p  {
+        margin-left: 14%;
+        font-weight: bold;
+    }
+
+    .customer-counter-count  {
+        font-size: 140px;
+        margin: auto;
+    }
+
+    .customer-counter-buttons  {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    button  {
+        border-style: none;
+        border-radius: 50%;
+        width: 14vw;
+        height: 14vw;
+        color: black;
+        font-weight: bold;
+        font-size: 36px;
+        background-color: $secondary-color;
+    }
+
+    button a:active  {
+        background-color: $secondary-text-color
+    }
+}
+
+.call-inside  {
+    background-color: $background-color;
+    color: $primary-text-color;
+    padding: 40px 0;
+    margin: auto;
+    text-align: center;
+
+    button  {
+        background-color: $secondary-color;
+        color:$primary-text-color;
+        font-size: 18px;
+        border-style: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+
+    input  {
+        margin: 24px 0;
+        width: 70%;
+        height: 30px;
+        border-style: none;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    label  {
+        font-weight: bold;
+    }
+}
