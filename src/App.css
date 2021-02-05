@@ -3,12 +3,12 @@ body {
   padding: 0;
   height: 100vh;
   width: 100%;
+  background-color: yellowgreen;
 }
 
 .customer-counter {
   width: 100%;
   max-width: 500px;
-  background-color: yellowgreen;
 }
 
 .customer-counter h2 {
@@ -57,14 +57,13 @@ body {
 }
 
 .call-inside {
-  background-color: yellowgreen;
   color: black;
   padding: 40px 0;
   margin: auto;
   text-align: center;
 }
 
-.call-inside button {
+.call-inside button, .call-inside a {
   background-color: yellow;
   color: black;
   font-size: 18px;
