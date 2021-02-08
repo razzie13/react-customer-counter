@@ -15,16 +15,16 @@ export default class Counter extends Component {
 
 
     decrementCount = () => {
-        let d = new Date();
+        let d = new Date()
         this.setState({ currentCustomerCount: Math.max( 0, this.state.currentCustomerCount - 1 )});
-        this.setState({ timeLastUpdated: d.getTime() });
+        this.setState({ timeLastUpdated: d.getHours() + ':' + d.getMinutes() });
         console.log('decrementCount');
     }
 
     incrementCount = () => {
-        let d = new Date();
+        let d = new Date()
         this.setState({ currentCustomerCount: this.state.currentCustomerCount + 1 });
-        this.setState({ timeLastUpdated: d.getTime() });
+        this.setState({ timeLastUpdated: d.getHours() + ':' + d.getMinutes() });
         console.log('incrementCount');
     }
 
@@ -37,7 +37,7 @@ export default class Counter extends Component {
                     <button onClick={this.decrementCount}>-</button>
                     <button onClick={this.incrementCount}>+</button>
                 </div>
-                <p>Last Updated: {this.state.timeLastUpdated}</p>
+                <p>Time Last Updated: {this.state.timeLastUpdated}</p>
             </div>
         )
     }
