@@ -2,15 +2,27 @@ import React, { Component } from 'react'
 
 export default class Counter extends Component {
 
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-            currentCustomerCount: 0,
-            timeLastUpdated: null
-        }
+    state = {
+        currentCustomerCount: null,
+        timeLastUpdated: null,
+        stateTest: null
     }
 
+    componentDidMount()  {
+        this.callBackendAPI()
+        .then(res => this.setState({ currentCustomerCount: res.express }))
+        .catch(err => console.log(err));
+    }
+
+    callBackendAPI = async () => {
+        const response = await fetch('/customer-counter');
+        const body = await response.json();
+
+        if (response.status !== 200) {
+            throw Error(body.message) 
+        }
+        return body;
+    };
     
 
 
